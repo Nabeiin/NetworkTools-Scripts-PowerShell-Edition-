@@ -24,9 +24,14 @@ Example IPs used:
 - `10.0.0.50` and `10.0.0.100` (Test IPs)
 - `8.8.8.8` (Google DNS)
 
-
 ## Sample Output
 
 ![massping](https://github.com/user-attachments/assets/7345d664-09f6-410f-9116-164914049689)
 
+### 3. `Traceroute.ps1`
+$target = Read-Host "Enter a hostname or IP to trace"
+Write-Host "`nTracing route to $target ..." -ForegroundColor Cyan
+tracert $target
 
+## Sample Output
+![image](https://github.com/user-attachments/assets/f7432e29-7859-4348-ba72-80f566ad362e)
